@@ -1,0 +1,13 @@
+
+.container{
+    display: block;
+}
+
+h1{
+    font-family: cursive;
+}
+
+p{
+    font-size: 18px;
+    font-family: fantasy;
+}

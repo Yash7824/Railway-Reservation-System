@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+       <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+            font-family: Consolas;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: blue;
+        }
+    
+        form{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 2vh;
+            margin-top: 7vh;
+            border-radius: 4vh 4vh 4vh 4vh;
+            padding: 10px 10px;
+            background: cornflowerblue;
+            width:700px;
+            margin-left:390px;
+        
+        }
+        .submit{
+            background: crimson;
+            justify-content: center;
+            width: 100px;
+            border-radius: 4vh 4vh 4vh 4vh;
+        }
+        .main3{
+            color:  white;
+            background-color:blue;
+            max-width: 80vh;
+            margin-left:469px;
+            margin-top:45px;
+            align-items: center;
+            margin-left: 600px;
+        }
+        .hi{
+            margin-left: 50px;
+        }
+        .main4{
+            gap:100px ;
+        }
+       </style>
+       
+       
+        
+    </head>
+    
+    <body>
+        <div class = "main3">
+        <h1 class="hi">HOME  </h1> 
+        <h2>RESERVATION FORM</h2>
+        </div>
+        
+    <form name="railway" id="submit" action='http://127.0.0.1:3000/tickets' method="post">
+        
+        <h1><marquee bgcolor="#00FF00">Welcome to Railway Reservation System </marquee> </h1>
+    <section class="main">
+     <table class="form">
+     <tr>
+         <td>From:</td>
+         <td><input type="text" name="from"> </td>
+             
+     <tr>
+     <td>To:</td>
+     <td><input type="text" name="to"</td>
+             </tr>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="firstname" id="first"></td></tr>
+        
+            <tr>
+            <Td>Last name:</Td>
+            <Td><input type="text" name="lastname" id="last"></Td></tr>
+         <tr>
+         <td>Age:</td>
+         <td><input type="number" name="age" id="age"></td>
+         </tr> 
+         <tr>
+             <td>Gender:</td>
+             <td><input type="text" name="gender" id="gender"></td>
+         </tr>
+         <tr>
+         <td>Address:</td>
+         <td><input type="text" name="address" id="address"></td></tr>
+         <tr>
+         <Td>Adhaar:</Td>
+         <Td><input type="number" value="aadhar" name="adhaar"></Td></tr>
+         <tr>
+         <Td>Account number:</Td>
+         <Td><input type="number" name="accno"></Td></tr>
+         <tr>
+         <Td>Journey Class:</Td>
+         <td>
+         <select class = 'form-control'>
+             <option>none</option>
+             <option>Ac 3rd Class</option>
+             <option>Ac 2nd class</option>
+             <option>Ac 1st class</option>
+             <option>Ac 3 Economy</option>
+             <option>Exec. Chair car</option>
+             <option>Sleeper class</option>
+             <option>Second Sitting</option>
+             <option>First Class</option>
+             <option></option>
+         </select>
+
+         </td>
+         
+         <tr>
+         <Td>No. of Passengers:</Td>
+         <Td><input type="number" value="" name="seatno"></Td></tr>
+         <tr>
+         <Td>Date:</Td>
+         <Td><input type="date" name="date"></Td></tr>
+          <tr>
+          <td>Payment options:</td>
+         <td> 
+          <input type="radio" name="payment" value="cc" />Credit Card <br />
+          <input type="radio" name="payment" value="dc" />Debit card <br /> 
+          <input type="radio" name="payment" value="wallet">wallet<br/>
+        </td>
+        </tr>
+
+        
+          <tr class="main4">
+           <td><input type="reset" value="reset"> </td>
+           <td><input type="submit" value="submit" class="submit"> </td>
+           <td><input type="submit" value="Cancel" > </td>
+         </tr>  
+         
+
+         </table>   
+        </section>
+            
+        </form>
+            <script src="./script1.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Welcome</title>
+    <style>
+        body,html {
+            display: flex;
+            margin: 0;
+            overflow: hidden;
+            font-family: Consolas;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: blue;
+    }
+
+        h2 {
+            margin-top: 12vh;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 4px 8px 25px #aaaaaa;
+            font-size: 40px;
+            
+        }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2vh;
+        margin-top: 10vh;
+        border-radius: 4vh 4vh 4vh 4vh;
+        padding: 40px 40px;
+        background: cornflowerblue;
+        
+
+    }
+
+    input {
+        max-width: 80vh;
+        padding: 10px 10px;
+        transition: all .8s;
+
+    }
+    .submit {
+        border-radius: 20px;
+        background: crimson;
+        color: snow;
+        transition: all .5s;
+    }
+
+    .submit:hover {
+        transform: scale(1.1);
+    }
+    .submit:active {
+        transform: scale(0.6);
+    }
+    input:focus {
+        background: rgba(228, 224, 224, 0.664);
+    }
+    </style>
+</head>
+<body bgcolor="yellow">
+    <h2>LOGIN</h2>
+    <form action="http://127.0.0.1:3000/book" method="post">
+        Username: <input type="text" name="username" id="user"/>
+        Password: <input type="password" name="password"/>
+        <input type="submit" class="submit" value="SUBMIT" id="submit"/>
+    </form>
+
+    
+    
+</body>
+</html>

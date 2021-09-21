@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>
+        Sign Up
+    </title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            overflow: hidden;
+            font-family: Consolas;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: blue;
+        }
+
+        .h1 {
+            margin-top: 20px;
+            margin-left: 500px;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 4px 8px 25px #aaaaaa;
+            font-size: 20px;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 2vh;
+            margin-top: 10vh;
+            border-radius: 4vh 4vh 4vh 4vh;
+            padding: 50px 50px;
+            background: cornflowerblue;
+            width: 520px;
+
+        }
+
+        .submit {
+            margin-top: 25px;
+            white-space: normal;
+            background: crimson;
+            color: snow;
+            transition: all .5s;
+
+            justify-content: center;
+            width: 100px;
+            border-radius: 4vh 4vh 4vh 4vh;
+        }
+
+        .submit:hover {
+            transform: scale(1.1);
+        }
+
+        .submit:active {
+            transform: scale(0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-left:1px;
+        margin-top: 70px;
+        font-size: 30px;
+        color: whitesmoke;
+        padding: 10px;">
+        SIGN UP
+    </h1>
+    <section class='main'>
+        <form action="http://127.0.0.1:3000/SignUp" method="post">
+            <table class='form'>
+                <tr>
+                    <td>UserName:</td>
+                    <td><input type='text' name='name' placeholder="abcd"></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type='date' name='date' id="date"></td>
+                </tr>
+                <tr>
+                    <td>Email Id:</td>
+                    <td><input type='email' name='email' placeholder='xyz@gmail.com'></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name='password'></td>
+                </tr>
+                <tr>
+                    <td>Confirm password:</td>
+                    <td><input type="password" name='ConfirmPassword'> </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="submit" value="SUBMIT" id="submit" style='margin-left:140px;'></td>
+                </tr>
+            </table>
+
+        </form>
+
+    </section>
+</body>
+
+</html>

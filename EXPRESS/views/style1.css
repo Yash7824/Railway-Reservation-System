@@ -1,0 +1,60 @@
+#navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(14, 94, 212, 0.616);
+
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li{
+    /* display: flex;
+    flex-direction: row; */
+    padding: 2px 8px;
+    margin: 2px;
+    list-style: none;
+}
+
+#navbar ul li a{
+    /* display: flex;
+    flex-direction: row; */
+    text-decoration: none;
+    list-style-type: none;
+    color: whitesmoke;
+}
+
+.container{
+    display:block;
+    position: relative;
+    margin-top: 70px;
+}
+
+.container h2{
+    font-family: cursive;
+    margin: 2px auto;
+    text-align: center;
+}
+
+.container #contact{
+    display: block;
+    padding: 10px 10px;
+    margin: 2px auto;
+    width: 100px;
+
+
+}
+
+input, textarea{
+    padding: 10px 10px;
+    margin: 7px -250px;
+    width: 600px;
+}
+
+.container .btn{
+    cursor: pointer;
+}
+
